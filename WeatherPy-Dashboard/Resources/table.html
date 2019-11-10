@@ -1,82 +1,19 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>WeatherPy Visualization Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-
-  <!--CSS Link-->
-  <link rel="stylesheet" type="text/css" href="style.css">
-
-  <!--JS Link-->
-  <script language="JavaScript" src="img-script.js"></script>
-
-</head>
-
-<body>
-  <!-- Navigation Section -->
-  <div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e74c3c;">
-      <a class="navbar-brand" style="background-color: #e74c3c;" href="index.html">WeatherPy Analysis</a>
-      <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="comparisons.html">Comparison</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
-          </li>
-
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <!-- Content Section -->
-  <div class="container">
-    <div class="box">
-      <h3 class="title">Data</h3>
-      <hr>
-      <p>The following table includes all of the data used for plotting during this project.</p>
-      <br>
-      <div class="table-responsive" style="overflow-x:auto; overflow-y:auto; max-height:470px; max-width: auto;">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th title="Field #1">City ID</th>
-              <th title="Field #2">City</th>
-              <th title="Field #3">Cloudiness</th>
-              <th title="Field #4">Country</th>
-              <th title="Field #5">Date</th>
-              <th title="Field #6">Humidity</th>
-              <th title="Field #7">Lat</th>
-              <th title="Field #8">Lng</th>
-              <th title="Field #9">Max Temp</th>
-              <th title="Field #10">Wind Speed</th>
-            </tr>
-          </thead>
-          <tbody>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>City</th>
+      <th>Cloudiness</th>
+      <th>Country</th>
+      <th>Date</th>
+      <th>Humidity</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Max Temp</th>
+      <th>Wind Speed</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <th>0</th>
       <td>Rikitea</td>
@@ -6078,27 +6015,4 @@
       <td>2.24</td>
     </tr>
   </tbody>
-        </table>
-      </div>
-
-    </div>
-  </div>
-<footer>
-<div class="col-4">
-  <div class='circle'>
-    <img src="Resources/assets/images/ME_1.jpg" alt="" onload='fixAspect(this);'>
-  </div>
-</div>
-</footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+</table>
