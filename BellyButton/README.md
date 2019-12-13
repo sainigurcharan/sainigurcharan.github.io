@@ -2,4 +2,4 @@
 
 => https://gurcharansingh.io/BellyButton
 
-![https://gurcharansingh.io/BellyButton](Images/image.png)
+![https://gurcharansingh.io/BellyButton](images/image.png)
