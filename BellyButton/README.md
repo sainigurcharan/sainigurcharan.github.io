@@ -2,4 +2,4 @@
 
 => https://gurcharansingh.io/BellyButton
 
-![Bacteria by filterforge.com](Images/image.png)
+![https://gurcharansingh.io/BellyButton](Images/image.png)
